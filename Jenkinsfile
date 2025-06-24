@@ -4,7 +4,7 @@ stages {
         stage('Clean') {
             steps {
                
-                sh cd C:/Users/343629/AnypointStudio/studio-workspace/emp-app 'mvn clean'
+                sh 'cd C:/Users/343629/AnypointStudio/studio-workspace/emp-app && mvn clean'
             }
         }
 
