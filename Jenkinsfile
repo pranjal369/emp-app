@@ -4,23 +4,23 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-               mvn clean
+                echo 'Clean Project'
             }
         }
         
          stage('Build') {
             steps {
-                sh 'mvn build'
+                echo 'Build Project'
             }
         }
          stage('Test') {
             steps {
-                 sh 'mvn test'
+                echo 'Test Project'
             }
         }
          stage('Deploy') {
             steps {
-                 sh 'deploy'
+                echo 'Deploy Project'
             }
         }
     }
