@@ -1,4 +1,6 @@
-stages {Add commentMore actions
+pipeline {
+    agent any
+stages {
         stage('Clean') {
             steps {
                
@@ -25,3 +27,4 @@ stages {Add commentMore actions
             }
         }
     }
+}
