@@ -1,27 +1,27 @@
-pipeline {
-    agent any
-
-    stages {
+stages {Add commentMore actions
         stage('Clean') {
             steps {
-                echo 'Clean Project'
+               
+                sh cd C:/Users/343629/AnypointStudio/studio-workspace/emp-app 'mvn clean'
             }
         }
-        
+
          stage('Build') {
             steps {
-                echo 'Build Project'
+               
+                sh 'mvn install'
             }
         }
          stage('Test') {
             steps {
-                echo 'Test Project'
+               
+                sh 'mvn test'
             }
         }
          stage('Deploy') {
             steps {
-                echo 'Deploy Project'
+               
+                sh 'mvn deploy'
             }
         }
     }
-}
